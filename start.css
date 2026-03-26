@@ -59,7 +59,7 @@ body{
 	width: 100vw;
 	height: 100vh;
   margin: auto;
-  background-image: url(imagens/background_5.png);
+  background-image: url(imagens/background_1.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -71,9 +71,9 @@ h1{
     font-weight: normal;
     letter-spacing: 5px;
 	  padding: 10px;
-	  color: rgb(19, 15, 216);
-    -webkit-text-stroke-width: 3px; /* Largura da borda */
-    -webkit-text-stroke-color: white; /* Cor da borda */
+	  color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 2px; /* Largura da borda */
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* Cor da borda */
     animation: fadeInUp;
     animation-duration: 3s;
     margin: 0;
