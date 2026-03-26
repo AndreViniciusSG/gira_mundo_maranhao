@@ -1,0 +1,59 @@
+Body{background: linear-gradient(135deg, #1A472A, #000000);
+  background-image:url('riachoduende.jpg');
+  background-repeat: no repeat;
+  background-position: center;}
+  
+  body {
+  display:flex;
+align-items: center;
+justify-content: center;
+ height: 850px; 
+
+}
+
+
+
+.quadro-fases {
+    width: 500px;
+    height: 450px; 
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+        url('caminho/para/sua/imagem-de-fundo.jpg'); 
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;
+    border-radius: 100px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+h1{
+  display:flex;
+align-items: center;
+justify-content: center;}
+h1{color:#DAA520;
+  font-family: Verdana;
+}
+img{height: 350px;
+position: absolute;
+top: 115px;
+right: 290px;
+align-items: center;
+align-content: center;
+}
+#verde{height: 170px;
+width:160px;
+position: absolute;
+top:370px;
+right:390px;
+align-items: center;
+align-content: center;
+}
+#azul{width:160px;
+height:160px;
+position: absolute;
+top:520px;
+right:385px;
+align-items: center;
+align-content: center;
+}
+
+

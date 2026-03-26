@@ -1,0 +1,31 @@
+
+img{
+animation:flipInX;
+animation-duration: 2s;
+      display: flex;
+      justify-content: center; /* centraliza na horizontal */
+      align-items: center; /* centraliza na vertical */
+      height: 80vh; /* altura total da tela */
+      margin: auto;
+      width:600px;}
+
+body{background: linear-gradient(135deg, #1A472A, #000000);
+}
+button{ 
+      display: flex;
+      justify-content: center; /* centraliza na horizontal */
+      align-items: center; /* centraliza na vertical */
+      height: 8vh; /* altura total da tela */
+      margin: auto;
+      width:200px;
+      border-radius: 50px;
+      color:background: background: #51BB7A;
+background: linear-gradient(135deg, #1A471A, #000000);
+color:white;
+}
+a{color:white;}
+button {
+  display: block;
+  margin-bottom: 10px; /* espaço entre os botões */
+}
+@ media

@@ -1,0 +1,110 @@
+Body{background: linear-gradient(135deg, #1A472A, #000000);
+  background-image:url('riachoduende.jpg');
+  background-repeat: no repeat;
+  background-position: center;}
+  
+ 
+
+
+
+ 
+.quadro-fases {
+   width: 500px;
+    height: 50px; 
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+        url('caminho/para/sua/imagem-de-fundo.jpg'); 
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;
+    border-radius: 100px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    position: absolute;
+top:90px;
+right: 200px;}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.app {
+  background: rgb(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  padding: 30px;
+  border-radius: 50px;
+}
+
+.app h1 {
+  font-weight: 25px;
+  color:black ;
+  font-weight: 800;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+  top: 200px;
+}
+h1{color:black;
+ display:flex;
+align-items: center;
+justify-content: center;
+ height: 80px;
+ 
+}
+
+.quiz h2 {color:black;
+  font-size: 18px;
+  font-weight: 900;
+  right: 300px;
+  margin: 10px;
+}
+
+.btn {
+  background:#879114  ;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+sh
+.btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+  text-co
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.correct {
+  background: #9aeabc;
+}
+
+.incorrect {
+  background: #ff9393;
+}
+
