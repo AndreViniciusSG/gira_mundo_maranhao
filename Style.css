@@ -1,31 +1,149 @@
-
-img{
-animation:flipInX;
-animation-duration: 2s;
-      display: flex;
-      justify-content: center; /* centraliza na horizontal */
-      align-items: center; /* centraliza na vertical */
-      height: 80vh; /* altura total da tela */
-      margin: auto;
-      width:600px;}
-
-body{background: linear-gradient(135deg, #1A472A, #000000);
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-button{ 
+
+body{
+      background-color: #1A471A;
+}
+
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Adrip';
+    src: url(fontes/adrip.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geo';
+    src: url(fontes/Geometos.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geom';
+    src: url(fontes/Gemstone.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Sansation';
+    src: url(fontes/sansation.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Gameplay';
+    src: url(fontes/Gameplay.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+
+/* Formatação do container principal */
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+      margin: auto;
+      background-image: url(imagens/background_3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.botoes{
+      display: block;
+      margin: auto;
+}
+
+.botoes h1{
+      font-family: Gameplay;
+	font-size: 70pt;
+      font-weight: normal;
+      letter-spacing: 5px;
+	padding: 10px;
+	color: rgb(245, 206, 32);
+      -webkit-text-stroke-width: 3px; /* Largura da borda */
+      -webkit-text-stroke-color: white; /* Cor da borda */
+      animation: heartBeat;
+      animation-duration: 3s;
+      margin: 0;
+}
+
+.botoes h2{
+      font-family: Gameplay;
+	font-size: 50pt;
+      font-weight: normal;
+      letter-spacing: 5px;
+	padding: 10px;
+	color: rgb(245, 206, 32);
+      -webkit-text-stroke-width: 3px; /* Largura da borda */
+      -webkit-text-stroke-color: white; /* Cor da borda */
+      animation: heartBeat;
+      animation-duration: 3s;
+      margin: 0;
+}
+
+.botoes p{
+      font-family: Gameplay;
+	font-size: 20pt;
+      font-weight: normal;
+      letter-spacing: 2px;
+	padding: 10px;
+	color: white;
+      -webkit-text-stroke-width: 2px; /* Largura da borda */
+      -webkit-text-stroke-color: black; /* Cor da borda */
+      animation: heartBeat;
+      animation-duration: 3s;
+      margin: 0;
+}
+
+
+.botoes button{ 
       display: flex;
       justify-content: center; /* centraliza na horizontal */
       align-items: center; /* centraliza na vertical */
       height: 8vh; /* altura total da tela */
+      font-family: Gameplay;
+	font-size: 15pt;
+      font-weight: normal;
       margin: auto;
+      letter-spacing: 2px;
+      margin-top: 10px;
       width:200px;
       border-radius: 50px;
-      color:background: background: #51BB7A;
-background: linear-gradient(135deg, #1A471A, #000000);
-color:white;
+      background: linear-gradient(135deg,  #ecdd07, #e7c21e);
+      border-color: white;
+      color: white;
+      animation: jello;
+      animation-duration: 3s;
 }
-a{color:white;}
-button {
-  display: block;
-  margin-bottom: 10px; /* espaço entre os botões */
+
+
+.botoes button:hover { 
+      cursor: pointer;
+      background: linear-gradient(135deg, #f5f5f3, #e7c21e);
+      transition: 0.5;
 }
-@ media
+
+a {
+      text-decoration: none;
+}

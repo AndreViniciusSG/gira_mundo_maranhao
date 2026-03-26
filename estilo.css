@@ -1,5 +1,10 @@
-body{background: linear-gradient(135deg, #1A472A, #000000);}
-h1{display: flex;
+
+body{
+    background: linear-gradient(135deg, #1A472A, #000000);
+}
+
+h1{
+    display: flex;
       justify-content: center; /* centraliza na horizontal */
       align-items: center; /* centraliza na vertical */
       height: 8vh; /* altura total da tela */
@@ -8,5 +13,5 @@ h1{display: flex;
       color:white;}
       p{color:white;
         font-family:Verdana;
-      }
+    }
       

@@ -1,59 +1,96 @@
-Body{background: linear-gradient(135deg, #1A472A, #000000);
-  background-image:url('riachoduende.jpg');
-  background-repeat: no repeat;
-  background-position: center;}
-  
-  body {
-  display:flex;
-align-items: center;
-justify-content: center;
- height: 850px; 
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body{
+      background-color: #1A471A;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Adrip';
+    src: url(fontes/adrip.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geo';
+    src: url(fontes/Geometos.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geom';
+    src: url(fontes/Gemstone.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Sansation';
+    src: url(fontes/sansation.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Gameplay';
+    src: url(fontes/Gameplay.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
 }
 
 
-
-.quadro-fases {
-    width: 500px;
-    height: 450px; 
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-        url('caminho/para/sua/imagem-de-fundo.jpg'); 
-    background-size: cover;          
-    background-position: center;     
-    background-repeat: no-repeat;
-    border-radius: 100px; 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+/* Formatação do container principal */
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
+  margin: auto;
+  background-image: url(imagens/background_5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
+
 h1{
-  display:flex;
-align-items: center;
-justify-content: center;}
-h1{color:#DAA520;
-  font-family: Verdana;
-}
-img{height: 350px;
-position: absolute;
-top: 115px;
-right: 290px;
-align-items: center;
-align-content: center;
-}
-#verde{height: 170px;
-width:160px;
-position: absolute;
-top:370px;
-right:390px;
-align-items: center;
-align-content: center;
-}
-#azul{width:160px;
-height:160px;
-position: absolute;
-top:520px;
-right:385px;
-align-items: center;
-align-content: center;
+    font-family: Gameplay;
+	  font-size: 50pt;
+    font-weight: normal;
+    letter-spacing: 5px;
+	  padding: 10px;
+	  color: rgb(19, 15, 216);
+    -webkit-text-stroke-width: 3px; /* Largura da borda */
+    -webkit-text-stroke-color: white; /* Cor da borda */
+    animation: fadeInUp;
+    animation-duration: 3s;
+    margin: 0;
 }
 
+.container img{
+  width: 15vw;
+  height: auto;
+  cursor: pointer;
+  animation: shakeY;
+  animation-duration: 3s;
+  margin: 15px;
+}
+
+.container img:hover{
+ 	-moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+}
 
