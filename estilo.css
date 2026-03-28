@@ -1,17 +1,85 @@
 
-body{
-    background: linear-gradient(135deg, #1A472A, #000000);
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-h1{
-    display: flex;
-      justify-content: center; /* centraliza na horizontal */
-      align-items: center; /* centraliza na vertical */
-      height: 8vh; /* altura total da tela */
-      margin: auto;
-      width:200px;
-      color:white;}
-      p{color:white;
-        font-family:Verdana;
-    }
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Kbr';
+    src: url(fontes/kbr.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Darling';
+    src: url(fontes/darling.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+body{
+      background-color: #1A471A;
+}
+
+
+/* Formatação do container principal */
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+    margin: auto;
+    background-image: url(imagens/background_8.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: auto;
+    background-color: white;
+    opacity: 0.7;
+
+}
+
+.info h1{
+    font-family: Darling;
+    font-size: 50pt;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center; /* centraliza na vertical */
+    margin: auto;
+    color:rgb(0, 0, 0);
+}
+    
+.info p{
+    font-family: Darling;
+    font-size: 20pt;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;
+    color:rgb(0, 0, 0);
+    font-family:Verdana;
+    margin: auto;
+}
       
+/* Formatação ao diminuir a tela para uso mobile*/
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+
+    .info h1{
+        font-size: 20pt;
+    }
+    .info p{
+        font-size: 10pt;
+    }
+}

@@ -6,7 +6,7 @@
 }
 
 body{
-      background-color: #1A471A;
+      background-color: #ffffff;
 }
 
 /* Formatação para fonte */
@@ -49,6 +49,45 @@ body{
     font-display: swap;
 }
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Kbr';
+    src: url(fontes/kbr.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Darling';
+    src: url(fontes/darling.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Kathen';
+    src: url(fontes/Kathen.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Bebas';
+    src: url(fontes/bebas.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Utendo';
+    src: url(fontes/utendo.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
 
 /* Formatação do container principal */
 .container {
@@ -58,34 +97,41 @@ body{
 	flex-wrap: wrap;
 	width: 100vw;
 	height: 100vh;
-  margin: auto;
-  background-image: url(imagens/background_1.png);
+    margin: auto;
+    background-image: url(imagens/background_9.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
 h1{
-    font-family: Gameplay;
-	  font-size: 50pt;
+    text-align: center;
+    text-justify: center;
+    font-family: Utendo;
+	font-size: 20pt;
     font-weight: normal;
     letter-spacing: 5px;
-	  padding: 10px;
-	  color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 2px; /* Largura da borda */
+	padding: 20px;
+	color:rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px; /* Largura da borda */
     -webkit-text-stroke-color: rgb(0, 0, 0); /* Cor da borda */
-    animation: fadeInUp;
+    animation: flipInX;
     animation-duration: 3s;
-    margin: 0;
+    margin: auto;
+    background-color: white;
+    opacity: 0.7;
 }
 
 .container img{
   width: 15vw;
   height: auto;
   cursor: pointer;
-  animation: shakeY;
+  animation: rubberBand;
   animation-duration: 3s;
+  padding: 10px;
   margin: 15px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
 }
 
 .container img:hover{
@@ -94,3 +140,17 @@ h1{
     transform: scale(1.2);
 }
 
+/* Formatação ao diminuir a tela para uso mobile*/
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+
+    h1{
+
+        font-size: 10pt;
+
+}
+
+.container img{
+  width: 40vw;
+}
+
+}
