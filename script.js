@@ -2,10 +2,10 @@ const questions = [
   {
     question: "Qual é o maior oceano do planeta?",
     answers: [
-      { id: 1, text: "atlântico", correct: false },
-      { id: 2, text: "Ìndico", correct:false },
-      { id: 3, text: "Pacìfico", correct: true },
-      { id: 4, text: "Àrtico", correct: false },
+      { id: 1, text: "1965", correct: false },
+      { id: 2, text: "1972", correct:false },
+      { id: 3, text: "1975", correct: false },
+      { id: 4, text: "1969", correct: true },
     ],
   },
   {

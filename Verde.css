@@ -1,29 +1,132 @@
-Body{background: linear-gradient(135deg, #1A472A, #000000);
-  background-image:url('riachoduende.jpg');
-  background-repeat: no repeat;
-  background-position: center;}
-  .quadro-fases {
-   width: 500px;
-    height: 50px; 
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-        url('caminho/para/sua/imagem-de-fundo.jpg'); 
-    background-size: cover;          
-    background-position: center;     
-    background-repeat: no-repeat;
-    border-radius: 100px; 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    position: absolute;
-top:90px;
-right: 200px;}
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Adrip';
+    src: url(fontes/adrip.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geo';
+    src: url(fontes/Geometos.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geom';
+    src: url(fontes/Gemstone.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Sansation';
+    src: url(fontes/sansation.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Gameplay';
+    src: url(fontes/Gameplay.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Kbr';
+    src: url(fontes/kbr.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Darling';
+    src: url(fontes/darling.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Kathen';
+    src: url(fontes/Kathen.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Bebas';
+    src: url(fontes/bebas.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Utendo';
+    src: url(fontes/utendo.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
 }
 
 
+body{
+  background: linear-gradient(135deg, #1A472A, #000000);
+
+}
+  
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
+  margin: auto;
+  background-image:url(imagens/background_10.png);
+  background-repeat: no repeat;
+  background-position: center;
+}
+
+.quadro-fases {
+    justify-content: center;  
+    width: 50vw;
+    height: auto; 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+  }
+
+.quiz{
+    width: 100vw;
+    text-align: center;
+    text-justify: center;
+    justify-content: center;
+    width: 15vw;
+    height: auto;
+    margin: auto;
+}
 
 .app {
   background: rgb(0, 0, 0, 0.2);
@@ -34,47 +137,47 @@ right: 200px;}
   border-radius: 50px;
 }
 
-.app h1 {
-  font-weight: 25px;
-  color:black ;
-  font-weight: 800;
-  border-bottom: 1px solid #333;
-  padding-bottom: 30px;
-  top: 200px;
-}
-h1{color:black;
- display:flex;
-align-items: center;
-justify-content: center;
- height: 80px;
- 
+.quiz {
+width: 70%;
+height: auto;
+padding: 10px;
+
 }
 
-.quiz h2 {color:black;
-  font-size: 18px;
-  font-weight: 900;
-  right: 300px;
-  margin: 10px;
+.quiz h2 {
+  font-family: Utendo;
+  justify-content: center;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 25px;
+  padding: 10px;
 }
 
 .btn {
-  background:#879114  ;
+  font-family: Utendo;
+  font-size: 15pt;
+  display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+  text-align: center;
+  text-justify: center;
+  background:#ffffff  ;
   color: #222;
-  font-weight: 500;
   width: 100%;
   border: 1px solid #222;
   padding: 10px;
   margin: 10px 0;
   text-align: left;
-  border-radius: 4px;
+  border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s;
 }
-sh
+
+
 .btn:hover:not([disabled]) {
   background: #222;
   color: #fff;
-  text-co
 }
 
 .btn:disabled {
@@ -89,7 +192,7 @@ sh
   border: 0;
   padding: 10px;
   margin: 20px auto 0;
-  border-radius: 4px;
+  border-radius: 2px;
   cursor: pointer;
   display: none;
 }
@@ -101,8 +204,20 @@ sh
 .incorrect {
   background: #ff9393;
 }
-#question{
-   top:8px
-  position:absolute;
-  right:500px;
+
+/* Formatação ao diminuir a tela para uso mobile*/
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+
+    .quadro-fases { 
+    width: 90vw;
+    height: auto;
+    padding: 10px;
+  }
+
+      .quiz {
+    width: 80%;
+    height: auto;
+
+    }
+
 }

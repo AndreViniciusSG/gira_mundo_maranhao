@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 *{
 	margin: 0;
@@ -85,12 +86,28 @@
     font-display: swap;
 }
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Kbr';
+    src: url(fontes/kbr.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Darling';
+    src: url(fontes/darling.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
 
 body{
-  background: linear-gradient(135deg, #1A472A, #000000);
-
+      background-color: #ffffff;
 }
-  
+
+
+/* Formatação do container principal */
 .container {
 	display: flex;
 	justify-content: center;
@@ -98,126 +115,53 @@ body{
 	flex-wrap: wrap;
 	width: 100vw;
 	height: 100vh;
-  margin: auto;
-  background-image:url(imagens/background_10.png);
-  background-repeat: no repeat;
-  background-position: center;
+	background-color: white;
+    margin: auto;
+    background-image: url(imagens/background_8.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.quadro-fases {
-    justify-content: center;  
-    width: 50vw;
-    height: auto; 
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-    background-size: cover;          
-    background-position: center;     
-    background-repeat: no-repeat;
-    margin: auto;
-    border-radius: 10px; 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    padding: 10px;
-  }
-
-.quiz{
-    width: 100vw;
-    text-align: center;
-    text-justify: center;
-    justify-content: center;
-    width: 15vw;
+.info{
+    width: 90%;
     height: auto;
+    background-color: white;
+    opacity: 0.7;
     margin: auto;
-}
-
-.app {
-  background: rgb(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 600px;
-  margin: 100px auto 0;
-  padding: 30px;
-  border-radius: 50px;
-}
-
-.quiz {
-width: 70%;
-height: auto;
-padding: 10px;
+    padding: 10px;
 
 }
 
-.quiz h2 {
-  font-family: Utendo;
-  justify-content: center;
-  text-align: center;
-  color:rgb(0, 0, 0);
-  font-size: 25px;
-  padding: 10px;
+.info h1{
+    font-family: Darling;
+    font-size: 50pt;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center; /* centraliza na vertical */
+    margin: auto;
+    color:rgb(0, 0, 0);
 }
-
-.btn {
-  font-family: Utendo;
-  font-size: 15pt;
-  display: flex;
-	justify-content: center;
-	text-align: center;
-	flex-wrap: wrap;
-  text-align: center;
-  text-justify: center;
-  background:#ffffff  ;
-  color: #222;
-  width: 100%;
-  border: 1px solid #222;
-  padding: 10px;
-  margin: 10px 0;
-  text-align: left;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.3s;
+    
+.info p{
+    font-family: Sansation;
+    font-size: 14pt;
+    text-align: justify;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;
+    color:rgb(0, 0, 0);
+    font-family:Verdana;
+    margin: auto;
+    padding: 10px;
 }
-
-
-.btn:hover:not([disabled]) {
-  background: #222;
-  color: #fff;
-}
-
-.btn:disabled {
-  cursor: no-drop;
-}
-
-#next-btn {
-  background: #001e4d;
-  color: #fff;
-  font-weight: 500;
-  width: 150px;
-  border: 0;
-  padding: 10px;
-  margin: 20px auto 0;
-  border-radius: 2px;
-  cursor: pointer;
-  display: none;
-}
-
-.correct {
-  background: #9aeabc;
-}
-
-.incorrect {
-  background: #ff9393;
-}
-
+      
 /* Formatação ao diminuir a tela para uso mobile*/
 @media only screen and (min-width: 300px) and (max-width: 1000px){
 
-    .quadro-fases { 
-    width: 90vw;
-    height: auto;
-    padding: 10px;
-  }
-
-      .quiz {
-    width: 80%;
-    height: auto;
-
+    .info h1{
+        font-size: 20pt;
     }
-
+    .info p{
+        font-size: 10pt;
+        padding: 5px;
+    }
 }
